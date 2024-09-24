@@ -14,7 +14,7 @@ public class App {
         System.out.println("Enter your first integer: ");
         int intOne = keys.nextInt();
         keys.nextLine();
-        System.out.println("Enter your second interger: ");
+        System.out.println("Enter your second integer: ");
         int intTwo = keys.nextInt();
         keys.nextLine();
 

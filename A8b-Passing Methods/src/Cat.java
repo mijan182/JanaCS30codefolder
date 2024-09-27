@@ -3,11 +3,11 @@ import static java.lang.System.*;
 public class Cat 
 {
     public void speak(){
-        out.println("meow meow meow");
+        out.println("meow meow");
     }
 
     public void name(){
-        out.println("im meowmoew");
+        out.println("I'm a cat!");
     }
 
     public void garfield(){

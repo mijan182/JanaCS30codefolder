@@ -1,9 +1,4 @@
-//(c) A+ Computer Science
-// www.apluscompsci.com
 
-//methods example 2 and 3
-
-import static java.lang.System.*;
 
 public class TurkeyRunner
 {

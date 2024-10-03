@@ -7,24 +7,20 @@
 // Program Description: Write a program to check 2 parameters.  If a is > b, output "yes".  If b is >
 //a, output "no".  If a is equal to b, return "equals".
 
-import java.util.Scanner;
 
 public class BigOrSmallRunner {
     public static void main(String[] args) throws Exception {
         
-        BigorSmall compare = new BigorSmall();
-        
-        Scanner scanner = new Scanner(System.in);
 
-        System.out.println("\"Yes\" if a > b, \"No\" if a < b, and \"Equal\" if a = b");
-        System.out.print("First number: ");
-        int a = scanner.nextInt();
-        System.out.print("Second number: ");
-        int b = scanner.nextInt();
-
-        String result = compare.check(a,b);
-        System.out.println("Result: " + result);
-
-        scanner.close();
+        BigorSmall.check(10,20);
+        BigorSmall.check(20, 10);
+        BigorSmall.check(20, 20);
+        BigorSmall.check(10, 10);
+        BigorSmall.check(0, 1);
+        BigorSmall.check(1, 0);
+        BigorSmall.check(3,5);
+        BigorSmall.check( 5, 3 );	
+		BigorSmall.check( 5342, 323 );	
+    
     }
 }

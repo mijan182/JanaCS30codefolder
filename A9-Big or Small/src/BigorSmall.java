@@ -1,13 +1,19 @@
 
+
 public class BigorSmall {
-    public String check(int a, int b){
+    public static void check(int a, int b){
+
+
 
     if (a > b){
-        return ("yes");
-    } else if (b > a){
-        return("no");
-    } else {
-        return("equal");
+        System.out.print("yes");
     }
+    if (a < b){
+        System.out.print("no");
+    }
+    if (a == b){
+        System.out.print("equals");
+    }
+    System.out.println();
 }
 }

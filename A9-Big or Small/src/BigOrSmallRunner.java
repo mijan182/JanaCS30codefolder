@@ -11,10 +11,20 @@ import java.util.Scanner;
 
 public class BigOrSmallRunner {
     public static void main(String[] args) throws Exception {
+        
+        BigorSmall compare = new BigorSmall();
+        
+        Scanner scanner = new Scanner(System.in);
 
-        // if (int a > int b){
-        //     System.out.println("yes");
-        }
-        }
+        System.out.println("\"Yes\" if a > b, \"No\" if a < b, and \"Equal\" if a = b");
+        System.out.print("First number: ");
+        int a = scanner.nextInt();
+        System.out.print("Second number: ");
+        int b = scanner.nextInt();
+
+        String result = compare.check(a,b);
+        System.out.println("Result: " + result);
+
+        scanner.close();
     }
 }

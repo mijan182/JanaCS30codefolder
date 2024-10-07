@@ -1,0 +1,17 @@
+public class Sum {
+    private double one, two, sum;
+        public void setNums (double num1, double num2)
+        {
+            one = num1;
+            two = num2;
+        }
+        public void sum()
+        {
+            double total = one + two;
+            System.out.println(total);
+        }
+        public void print()
+        {
+            System.out.println(sum);
+        }
+}

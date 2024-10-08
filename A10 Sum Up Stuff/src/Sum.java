@@ -7,8 +7,7 @@ public class Sum {
         }
         public void sum()
         {
-            double total = one + two;
-            System.out.println(total);
+            sum = one + two;
         }
         public void print()
         {

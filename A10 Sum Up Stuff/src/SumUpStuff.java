@@ -9,5 +9,20 @@ public class SumUpStuff {
 		test.setNums(2,6);
 		test.sum( );
 		test.print();
+
+        //second test case
+        test.setNums(10,2);
+		test.sum( );
+		test.print();
+
+        //third test case
+        test.setNums(120,4568);
+		test.sum( );
+		test.print();
+
+        //fourth test case
+        test.setNums(345.354,0.1238);
+		test.sum( );
+		test.print();
     }
 }

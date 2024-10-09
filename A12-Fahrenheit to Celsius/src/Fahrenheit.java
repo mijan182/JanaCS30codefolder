@@ -2,8 +2,8 @@ public class Fahrenheit {
 
     private double FahrenNum;
 
-    public void setfahrenheit(double FahrenNum){
-        
+    public void setfahrenheit(double fahrenheit){
+        FahrenNum = fahrenheit;
     }
     public double getcelcius(){
         double celcius = 0.0;

@@ -3,6 +3,15 @@ public class  Fahrenheitrunner {
         Fahrenheit test = new Fahrenheit();
 
         test.setfahrenheit(200);
+        test.getcelcius();
+        test.print();
+
+        test.setfahrenheit(153);
+        test.getcelcius();
+        test.print();
+
+        test.setfahrenheit(90);
+        test.getcelcius();
         test.print();
 
     }

@@ -14,15 +14,15 @@ public class App {
         calculator test = new calculator();
 
         System.out.println("Enter side A: ");
-        String sideA = input.next();
+        Double sideA = input.nextDouble();
         System.out.println("Enter side B: ");
-        String sideB = input.next();
+        Double sideB = input.nextDouble();
         System.out.println("Enter side C: ");
-        String sideC = input.next();
+        Double sideC = input.nextDouble();
         input.nextLine();
 
-        test.sides(0, 0, 0);
-        test.Calculator(0, 0, 0);
+        test.sides(sideA, sideB, sideC);
+        test.Calculator(sideA, sideB, sideC);
 
         input.close();
     }

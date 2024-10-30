@@ -1,6 +1,6 @@
 /*Program Name: 23-CoolNumbers
  * Student name: Jana Marie Reyes
- * Date: 10/29/24
+ * Date: 10/30/24
  * Program Description: Complete methods isCoolNum( n ) && countCoolNumbers( n ).  isCoolNum( n) will determine if a number is a cool number.  
  */
 

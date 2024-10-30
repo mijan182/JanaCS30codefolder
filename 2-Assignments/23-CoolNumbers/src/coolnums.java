@@ -1,26 +1,21 @@
 public class coolnums {
     public static boolean iscoolnums(int num){
-        int x = 0;
-        x = 6;
 
-        for (x = 6; x < num; x++){
-            if ((x%3==1)&&(x%6==1)&&(x%4==1)&&(x%5==1)){
-                return true;
-            }
-        }
-        return false;
+            return ((num%3==1)&&(num%6==1)&&(num%4==1)&&(num%5==1)); 
+            //checks if the number is a cool number (remainder is 1 when divided by 3,4,5, and 6)
 
     }
+
+
     public static int countcoolnums(int stop){
-        boolean check = iscoolnums(stop);
-        int b=0;
-            for (b=0;b<stop;b++){
-                if (check == true){
-                }else{
-                    b=b-1;
-                }
+        //counts the number of "cool numbers"
+        int count = 0;
+        for (int x = 6; x<stop; x++){ //stop = the given number by input = marks where it stops counting
+            if (iscoolnums(x)){ //adds one everytime a cool number is verified
+                count ++;
             }
-            return b;
+        }
+        return count; //return statement
 
     }
 

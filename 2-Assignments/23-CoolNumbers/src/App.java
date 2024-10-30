@@ -8,6 +8,5 @@
 
 public class App {
     public static void main(String[] args) throws Exception {
-        cn.replayNinput();
-    }
+        cn.replayNinput(); //placed all code into one method (made more sense to me)
 }

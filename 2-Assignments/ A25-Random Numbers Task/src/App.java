@@ -9,12 +9,12 @@ import java.util.Random;
 public class App {
     public static void main(String[] args) throws Exception {
 
-        for(int i=0;i<10;i++){
-          Random r = new Random();
-        int first = r.nextInt();
+        for(int i=0;i<10;i++){//created loop
+          Random r = new Random();//named random with new name(like a scanner)
+        int first = r.nextInt();//made the first two variables
         int second = r.nextInt();
 
-        RNT.randomsthings(first, second);
+        RNT.randomsthings(first, second);//placed variables into method
    
         }
        

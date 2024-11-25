@@ -28,10 +28,13 @@ public class App {
                 System.out.println(Arrays.toString(array1));
                 System.out.println("Sum of spots 3-6: "+ arraysutil.sumSec(array1,3,6));
                 System.out.println("Sum of spots 2-9: "+ arraysutil.sumSec(array1,2,9));
-                System.out.println("Number of 4s: "+arraysutil.countOccur(array1,4));;
-                System.out.println("Number of 9s: "+arraysutil.countOccur(array1,9));;
-                System.out.println("Number of 7s: "+arraysutil.countOccur(array1,7));;
-                System.out.println("Array with all 7s removed: "+arraysutil.removeOccur(array1,7));;
+                System.out.println("Number of 4s: "+arraysutil.countOccur(array1,4));
+                System.out.println("Number of 9s: "+arraysutil.countOccur(array1,9));
+                System.out.println("Number of 7s: "+arraysutil.countOccur(array1,7));
+
+
+                int[] result = arraysutil.removeOccur(array1, 7);
+                System.out.println("Array with all 7s removed: " + Arrays.toString(result)); 
 
 
 
@@ -43,10 +46,12 @@ public class App {
                 System.out.println("\n"+Arrays.toString(array2));
                 System.out.println("Sum of spots 3-6: "+ arraysutil.sumSec(array2,3,6));
                 System.out.println("Sum of spots 2-9: "+ arraysutil.sumSec(array2,2,9));
-                System.out.println("Number of 4s: "+arraysutil.countOccur(array2,4));;
-                System.out.println("Number of 9s: "+arraysutil.countOccur(array2,9));;
-                System.out.println("Number of 7s: "+arraysutil.countOccur(array2,7));;
-                System.out.println("Array with all 7s removed: "+arraysutil.removeOccur(array2,7));;
+                System.out.println("Number of 4s: "+arraysutil.countOccur(array2,4));
+                System.out.println("Number of 9s: "+arraysutil.countOccur(array2,9));
+                System.out.println("Number of 7s: "+arraysutil.countOccur(array2,7));
+
+                int[] result = arraysutil.removeOccur(array2, 7);
+                System.out.println("Array with all 7s removed: " + Arrays.toString(result)); 
             }
 
 

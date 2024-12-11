@@ -18,7 +18,9 @@ void draw() { // Happens constantly (screen refresh)
     
     
     for(Ball otherBall:ballGroup){
+      if (theBall != otherBall){
       theBall.checkCollision(otherBall);
+      }
     }
   }
   //old loop
@@ -73,7 +75,7 @@ class Ball {
         //Set Velocity & Gravity
         dx = int( random(-10,10));
         dy = int( random(-10,10));
-        grav = 0;
+        grav = -1;
     }
 
     void display() {

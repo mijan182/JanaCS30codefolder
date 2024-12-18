@@ -6,8 +6,11 @@
 
 import java.util.*;
 
+
 public class App {
     public static void main(String[] args) throws Exception {
+        Random random = new Random();
+
         List<String> nameList = new ArrayList<String>();
         Scanner input = new Scanner(System.in);
 
@@ -29,5 +32,17 @@ public class App {
         }
         System.out.println();
     }
+
+        System.out.println("\nStarting the reverse raffle draw...\n");
+
+        while(nameList.size()>1){
+            int index =  random.nextInt(nameList.size());
+            String draw = nameList.remove(index);
+
+            System.out.println(draw + " HAS BEEN REMOVED. THEY DO NOT WIN");
+        }
+
+        String winner = nameList.get(0);
+        System.out.println("\n The WINNER is: " + winner + "!");
     }
 }

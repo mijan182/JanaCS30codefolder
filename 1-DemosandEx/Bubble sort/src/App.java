@@ -1,25 +1,73 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        int[] numList = {5,15,3,8,9,1,20,7};
+        int[] numsList = {5,15,3,8,9,1,20,7};
 
-        for(int i = 0; i<numList.length; i++){
-            System.out.print(numList[i]);
+        //Printing the original list
+        for (int i = 0; i < numsList.length; i++) {
+            System.out.print(numsList[i] + ", ");
         }
+        System.out.println("");
+
+        //overwriting with the sorted list
+        numsList = selsort(numsList);
+        
+        //Printing the sorted data
         System.out.println("\nThe sorted version is: ");
-        numList = sort(numList);
+        for (int i = 0; i < numsList.length; i++) {
+            System.out.print(numsList[i] + ", ");
+        }
+
     }
 
-    public static int[] sort (int[] nums){
+    public static int[] selsort(int[] nums) {
+        int n = nums.length;
 
-        for(int i = 0; i<nums.length;i++){
-            for(int j = 0; j < nums.length-i - 1; j++){
+        //One by one every element of the array
+        for (int i = 0; i < n; i++) {
 
-                if (nums[j] > nums[j+1]){
+            //Find the minimum element in the array
+            //Assume i is min to start
+            int minIdx = i;
 
+            for (int j = i + 1; j < n; j++) {
+                System.out.println("J is " + nums[j] + "; min is " + nums[minIdx]);
+
+                if (nums[j] < nums[minIdx]) {
+                    //overrite min if j is smaller than current
+                    minIdx = j;
+                    System.out.println("New Min"); 
+                }
+            }
+
+            //Swap the found minimum element with first element
+            int temp = nums[minIdx];
+            nums[minIdx] = nums[i];
+            nums[i] = temp;
+            System.out.println("SWAP, end of cycle " + i);
+
+        }
+
+        return nums;
+    }
+
+    public static int[] bsort(int[] nums) {
+        int n = nums.length;
+
+        for (int i = 0; i < n; i++) {
+            for(int j = 0; j < (n-i) - 1; j++){
+                System.out.println("J = " + nums[j] + "; J+1= " + nums[j+1]);
+                if (nums[j] > nums[j+1]) {
+                    System.out.println("SWAP");
+                    //swap the elements
+                    int temp = nums[j];
+                    nums[j] = nums[j+1];
+                    nums[j+1] = temp;
                 }
 
             }
         }
+        
         return nums;
     }
+
 }
